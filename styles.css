@@ -1,85 +1,144 @@
 /* General Body Styling */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #333;
-    background-color: #f8f8f8;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #4A5956; /* Feldgrau for primary text */
+    background-color: #F7F4E8; /* Floral White background */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Header Styling */
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #4A5956;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #37453E; /* Darker on hover */
+}
+
+/* Header Section */
 header {
-    background-color: #fff;
-    padding: 50px;
+    padding: 100px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin: 0;
+    font-size: 3rem;
+    color: #0A0908; /* Black for strong contrast */
+    font-weight: 700;
 }
 
 header p {
-    color: #666;
-    font-size: 1.1rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #4A5956;
 }
 
-/* Section Styling */
-section {
-    padding: 50px;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
+button {
+    background-color: #37453E; /* Outer Space for button */
+    color: #F7F4E8; /* Floral White for button text */
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+button:hover {
+    background-color: #4A5956; /* Feldgrau for hover */
+    transform: scale(1.05);
+}
+
+/* Section Headings */
 section h2 {
     font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+    color: #37453E; /* Darker color for section titles */
+    font-weight: 700;
+    text-transform: lowercase;
+    border-bottom: 1px solid #788475; /* Reseda Green border */
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-/* Project Cards */
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+section h2::before {
+    content: "/ ";
+    color: #37453E; /* Accent color for slash */
 }
 
-.project-card h3 {
-    margin: 0;
-    color: #333;
+/* Skills Styling */
+.skills {
+    margin-top: 1rem;
+    color: #788475; /* Lightened Reseda Green for skills */
 }
 
-.project-card p {
-    color: #666;
-    margin-top: 10px;
+.skills span {
+    color: #37453E; /* Accent color for skill icons */
 }
 
-/* Smooth Transitions */
-* {
-    transition: all 0.3s ease;
+/* Experience Section Styling */
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
 }
 
-/* Hover Effects for Project Cards */
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.experience-nav {
+    flex: 1;
+    text-align: left;
+    color: #788475; /* Lightened green for experience list */
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+.experience-nav p {
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.experience-nav p.highlight {
+    color: #37453E; /* Highlighted item */
+}
+
+.experience-content {
+    flex: 3;
+    color: #4A5956; /* Main text color */
+}
+
+.experience-content h3 {
+    margin-top: 0;
+    color: #0A0908;
+    font-weight: 600;
+}
+
+.experience-content ul {
+    padding-left: 1.2rem;
+    color: #788475;
 }
 
 /* Link Styling */
 a {
-    color: #007aff; /* Apple-like blue color */
+    color: #37453E;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #005bb5;
+    color: #4A5956; /* Slightly lighter on hover */
 }
+
+/* Section Padding */
+section {
+    padding: 60px;
