@@ -6,54 +6,55 @@
     <title>Diego Mojica - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Dropdown Menu Button -->
+    <!-- Dropdown Menu Toggle (Top Right) -->
     <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
     </div>
 
-    <!-- Dropdown Menu -->
+    <!-- Dropdown Menu (only visible on hover/click) -->
     <div id="dropdown-menu" class="dropdown-menu">
-        <a href="https://www.linkedin.com/in/diego-mojica" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/Dmojicaa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="https://www.linkedin.com/in/diego-mojica-5b1b3b252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Dmojicaa" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:diegomojica05@outlook.com"><i class="fas fa-envelope"></i></a>
     </div>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Hi, Diego here.</h1>
-        <p>I create websites and software.</p>
-        <button onclick="window.location.href='#contact'">Say hi!</button>
-    </header>
+    <!-- Main Section -->
+    <main>
+        <h1>Diego Mojica</h1>
+        <button onclick="window.location.href='mailto:diegomojica05@outlook.com'">Email Me</button>
+    </main>
 
-    <!-- About Section -->
+    <!-- About Section with Bio -->
     <section id="about">
         <h2>about me</h2>
         <p>I'm an enthusiastic and detail-oriented computer science freshman at California State University, currently exploring the world of programming with a focus on C++ and experience in a Linux environment. I'm passionate about developing my skills, continuously learning new concepts, and crafting efficient, well-structured code.</p>
     </section>
 
-    <!-- Projects Section (Placeholder for Now) -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>projects</h2>
         <p>Coming soon! Stay tuned for my upcoming projects.</p>
     </section>
 
-    <!-- Contact Section with Button -->
-    <section id="contact">
-        <h2>contact</h2>
-        <button onclick="toggleContactMenu()">Contact Me</button>
-        <div id="contact-menu" class="contact-menu">
-            <a href="https://www.linkedin.com/in/diego-mojica" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Dmojicaa" target="_blank">GitHub</a>
-            <a href="mailto:your-email@example.com">Email</a>
-        </div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>experience</h2>
+        <p>Details about your experience can go here.</p>
     </section>
 
-    <!-- Link to JavaScript file -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>contact</h2>
+        <p>Thank you for visiting my portfolio!</p>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

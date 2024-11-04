@@ -1,4 +1,4 @@
-/* General Body Styling with Background Image */
+/* General Body Styling with Background Image and Smooth Scrolling */
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #F7F4E8;
@@ -7,13 +7,49 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-/* Dropdown Menu Button */
+/* Main Section Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3.5rem;
+    color: #F7F4E8;
+    margin: 0;
+    font-weight: 700;
+}
+
+main button {
+    background-color: #788475;
+    color: #F7F4E8;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main button:hover {
+    background-color: #4A5956;
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu Toggle (Top Right Corner) */
 .menu-toggle {
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     color: #F7F4E8;
     font-size: 1.5rem;
     cursor: pointer;
@@ -29,11 +65,16 @@ body {
     display: none; /* Hidden initially */
     position: fixed;
     top: 60px;
-    left: 20px;
+    right: 20px;
     background-color: #37453E;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
 }
 
 .dropdown-menu a {
@@ -45,45 +86,26 @@ body {
     transition: color 0.3s ease;
 }
 
+.dropdown-menu a i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
 .dropdown-menu a:hover {
     color: #788475;
 }
 
-.dropdown-menu i {
-    margin-right: 8px;
-}
-
-/* Header Section */
-header {
-    padding: 100px 0;
+/* Section Styling with Box Shadows */
+section {
+    padding: 60px;
     text-align: center;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #F7F4E8;
-    font-weight: 700;
-}
-
-header p {
-    font-size: 1.5rem;
-    color: #788475;
-}
-
-button {
-    background-color: #788475;
-    color: #F7F4E8;
-    font-weight: 600;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #4A5956;
-    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Headings */
@@ -111,9 +133,4 @@ a {
 
 a:hover {
     color: #788475;
-}
-
-/* Section Styling */
-section {
-    padding: 60px;
 }
