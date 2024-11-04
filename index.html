@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Mojica - Portfolio</title>
-    <!-- Import Nunito Sans from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Link to CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +12,6 @@
     <!-- Simple Navigation Bar -->
     <nav class="navbar">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -29,36 +26,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>about me</h2>
-        <p>I'm Diego, a developer passionate about crafting sleek, user-friendly websites and software applications.</p>
-
-        <!-- Skills List -->
-        <div class="skills">
-            <p><span>&#9656;</span> Typescript &nbsp; <span>&#9656;</span> React.js &nbsp; <span>&#9656;</span> JavaScript ES6+ &nbsp; <span>&#9656;</span> Python</p>
-            <p><span>&#9656;</span> Java &nbsp; <span>&#9656;</span> C++ &nbsp; <span>&#9656;</span> Node.js &nbsp; <span>&#9656;</span> MongoDB</p>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>experience</h2>
-        <div class="experience-container">
-            <div class="experience-nav">
-                <p class="highlight">Amazon</p>
-                <p>Wattpad</p>
-                <p>University of Toronto</p>
-                <p>Centivizer</p>
-                <p>Orange Gate</p>
-            </div>
-            <div class="experience-content">
-                <h3 class="subheading">Software Developer Intern <span class="highlight">@ Amazon</span></h3>
-                <p>July 2022 - Present</p>
-                <ul>
-                    <li>Developed scalable applications and automation tools within AWS infrastructure.</li>
-                    <li>Collaborated on projects that impact thousands of users.</li>
-                    <li>Technologies: Python, Java, AWS.</li>
-                </ul>
-            </div>
-        </div>
+        <p>I'm an enthusiastic and detail-oriented computer science freshman at California State University, currently exploring the world of programming with a focus on C++ and experience in a Linux environment. I'm passionate about developing my skills, continuously learning new concepts, and crafting efficient, well-structured code.</p>
     </section>
 
     <!-- Projects Section (Placeholder for Now) -->
@@ -67,11 +35,18 @@
         <p>Coming soon! Stay tuned for my upcoming projects.</p>
     </section>
 
-    <!-- Contact Section with Social Links -->
+    <!-- Contact Section with Button -->
     <section id="contact">
         <h2>contact</h2>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/diego-mojica-5b1b3b252/" target="_blank">LinkedIn</a> or check out my work on <a href="https://github.com/Dmojicaa" target="_blank">GitHub</a>.</p>
+        <button onclick="toggleContactMenu()">Contact Me</button>
+        <div id="contact-menu" class="contact-menu">
+            <a href="https://www.linkedin.com/in/diego-mojica-5b1b3b252/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Dmojicaa" target="_blank">GitHub</a>
+            <a href="mailto:mojicadiego00@gmail.com">Email</a>
+        </div>
     </section>
 
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

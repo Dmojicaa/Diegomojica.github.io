@@ -1,14 +1,14 @@
 /* General Body Styling */
 body {
     font-family: 'Nunito Sans', sans-serif;
-    color: #4A5956; /* Feldgrau for primary text */
-    background-color: #F7F4E8; /* Floral White background */
+    color: #F7F4E8; /* Floral White for text */
+    background-color: #37453E; /* Outer Space as the main background */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Navigation Bar Styling */
+/* Navbar Styling */
 .navbar {
     position: fixed;
     top: 20px;
@@ -18,14 +18,14 @@ body {
 }
 
 .navbar a {
-    color: #4A5956;
-    font-size: 1rem;
+    color: #F7F4E8;
     text-decoration: none;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #37453E; /* Darker on hover */
+    color: #788475; /* Reseda Green on hover */
 }
 
 /* Header Section */
@@ -36,18 +36,18 @@ header {
 
 header h1 {
     font-size: 3rem;
-    color: #0A0908; /* Black for strong contrast */
+    color: #F7F4E8;
     font-weight: 700;
 }
 
 header p {
     font-size: 1.5rem;
-    color: #4A5956;
+    color: #788475; /* Reseda Green for contrast in description */
 }
 
 button {
-    background-color: #37453E; /* Outer Space for button */
-    color: #F7F4E8; /* Floral White for button text */
+    background-color: #788475; /* Reseda Green for buttons */
+    color: #F7F4E8;
     font-weight: 600;
     padding: 12px 24px;
     border: none;
@@ -57,88 +57,66 @@ button {
 }
 
 button:hover {
-    background-color: #4A5956; /* Feldgrau for hover */
+    background-color: #4A5956; /* Feldgrau for button hover */
     transform: scale(1.05);
 }
 
 /* Section Headings */
 section h2 {
     font-size: 2rem;
-    color: #37453E; /* Darker color for section titles */
+    color: #F7F4E8;
     font-weight: 700;
     text-transform: lowercase;
-    border-bottom: 1px solid #788475; /* Reseda Green border */
+    border-bottom: 1px solid #788475; /* Reseda Green border for accents */
     padding-bottom: 10px;
     display: inline-block;
 }
 
 section h2::before {
     content: "/ ";
-    color: #37453E; /* Accent color for slash */
-}
-
-/* Skills Styling */
-.skills {
-    margin-top: 1rem;
-    color: #788475; /* Lightened Reseda Green for skills */
-}
-
-.skills span {
-    color: #37453E; /* Accent color for skill icons */
-}
-
-/* Experience Section Styling */
-.experience-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
-}
-
-.experience-nav {
-    flex: 1;
-    text-align: left;
-    color: #788475; /* Lightened green for experience list */
-    font-size: 1rem;
-    margin-right: 2rem;
-}
-
-.experience-nav p {
-    cursor: pointer;
-    margin: 0.5rem 0;
-}
-
-.experience-nav p.highlight {
-    color: #37453E; /* Highlighted item */
-}
-
-.experience-content {
-    flex: 3;
-    color: #4A5956; /* Main text color */
-}
-
-.experience-content h3 {
-    margin-top: 0;
-    color: #0A0908;
-    font-weight: 600;
-}
-
-.experience-content ul {
-    padding-left: 1.2rem;
-    color: #788475;
+    color: #788475; /* Reseda Green for section title slashes */
 }
 
 /* Link Styling */
 a {
-    color: #37453E;
+    color: #F7F4E8;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #4A5956; /* Slightly lighter on hover */
+    color: #788475; /* Reseda Green on hover */
 }
 
-/* Section Padding */
+/* Section Styling */
 section {
     padding: 60px;
+}
+
+/* Divider Lines for Each Section */
+.divider {
+    border-top: 1px solid #4A5956; /* Subtle divider in Feldgrau */
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Contact Menu Styling */
+.contact-menu {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+}
+
+.contact-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #4A5956; /* Feldgrau */
+    color: #F7F4E8;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-menu a:hover {
+    background-color: #788475; /* Reseda Green on hover */
+}
