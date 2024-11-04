@@ -1,31 +1,56 @@
-/* General Body Styling */
+/* General Body Styling with Background Image */
 body {
     font-family: 'Nunito Sans', sans-serif;
-    color: #F7F4E8; /* Floral White for text */
-    background-color: #37453E; /* Outer Space as the main background */
+    color: #F7F4E8;
+    background: url('https://unsplash.com/photos/gray-digital-wallpaper--6zFVL4YuaM') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Navbar Styling */
-.navbar {
+/* Dropdown Menu Button */
+.menu-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 15px;
+    left: 20px;
+    color: #F7F4E8;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.navbar a {
+.menu-toggle i:hover {
+    color: #788475;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none; /* Hidden initially */
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    background-color: #37453E;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu a {
+    display: block;
     color: #F7F4E8;
+    padding: 10px;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #788475; /* Reseda Green on hover */
+.dropdown-menu a:hover {
+    color: #788475;
+}
+
+.dropdown-menu i {
+    margin-right: 8px;
 }
 
 /* Header Section */
@@ -42,11 +67,11 @@ header h1 {
 
 header p {
     font-size: 1.5rem;
-    color: #788475; /* Reseda Green for contrast in description */
+    color: #788475;
 }
 
 button {
-    background-color: #788475; /* Reseda Green for buttons */
+    background-color: #788475;
     color: #F7F4E8;
     font-weight: 600;
     padding: 12px 24px;
@@ -57,7 +82,7 @@ button {
 }
 
 button:hover {
-    background-color: #4A5956; /* Feldgrau for button hover */
+    background-color: #4A5956;
     transform: scale(1.05);
 }
 
@@ -67,14 +92,14 @@ section h2 {
     color: #F7F4E8;
     font-weight: 700;
     text-transform: lowercase;
-    border-bottom: 1px solid #788475; /* Reseda Green border for accents */
+    border-bottom: 1px solid #788475;
     padding-bottom: 10px;
     display: inline-block;
 }
 
 section h2::before {
     content: "/ ";
-    color: #788475; /* Reseda Green for section title slashes */
+    color: #788475;
 }
 
 /* Link Styling */
@@ -85,38 +110,10 @@ a {
 }
 
 a:hover {
-    color: #788475; /* Reseda Green on hover */
+    color: #788475;
 }
 
 /* Section Styling */
 section {
     padding: 60px;
-}
-
-/* Divider Lines for Each Section */
-.divider {
-    border-top: 1px solid #4A5956; /* Subtle divider in Feldgrau */
-    margin: 20px 0;
-    width: 100%;
-}
-
-/* Contact Menu Styling */
-.contact-menu {
-    display: none; /* Hidden by default */
-    margin-top: 20px;
-}
-
-.contact-menu a {
-    display: block;
-    padding: 10px;
-    background-color: #4A5956; /* Feldgrau */
-    color: #F7F4E8;
-    margin: 5px 0;
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-menu a:hover {
-    background-color: #788475; /* Reseda Green on hover */
 }

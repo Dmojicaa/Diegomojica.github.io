@@ -6,15 +6,22 @@
     <title>Diego Mojica - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Simple Navigation Bar -->
-    <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Dropdown Menu Button -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdown-menu" class="dropdown-menu">
+        <a href="https://www.linkedin.com/in/diego-mojica" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Dmojicaa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
 
     <!-- Header Section -->
     <header>
@@ -40,9 +47,9 @@
         <h2>contact</h2>
         <button onclick="toggleContactMenu()">Contact Me</button>
         <div id="contact-menu" class="contact-menu">
-            <a href="https://www.linkedin.com/in/diego-mojica-5b1b3b252/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/diego-mojica" target="_blank">LinkedIn</a>
             <a href="https://github.com/Dmojicaa" target="_blank">GitHub</a>
-            <a href="mailto:mojicadiego00@gmail.com">Email</a>
+            <a href="mailto:your-email@example.com">Email</a>
         </div>
     </section>
 

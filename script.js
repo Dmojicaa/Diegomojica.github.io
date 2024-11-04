@@ -1,8 +1,11 @@
-// script.js
+// Toggle the dropdown menu
+function toggleMenu() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+}
 
-// Function to toggle the contact menu
+// Toggle the contact menu
 function toggleContactMenu() {
     const contactMenu = document.getElementById('contact-menu');
-    // Toggle display between none and block
     contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
 }
